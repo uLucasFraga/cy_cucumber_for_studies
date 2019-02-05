@@ -1,0 +1,14 @@
+{   
+"projectId": "mxxwps",
+  "baseUrl": "https://concrete.com.br",
+  "video": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "overwrite": true,
+    "html": true,
+    "json": true
+  }
+}

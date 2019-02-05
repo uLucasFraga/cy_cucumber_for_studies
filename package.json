@@ -1,0 +1,38 @@
+{
+  "name": "cypress-cucumber-for-beginners",
+  "version": "1.0.0",
+  "description": "Example of cypress with cucumber for beginners",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --spec cypress/integration/*.feature",
+    "cypress:tags": "cypress run -e TAGS='@e2e'",
+    "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html",
+    "simple_build": "cd ../cy-cucumber-for-beginners && npm install",
+    "static_fix": "standard --fix",
+    "clean:report": "rimraf mochawesome-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uLucasFraga/cy-cucumber-for-beginners.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "homepage": "https://github.com/uLucasFraga/cy-cucumber-for-beginners#readme",
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "cypress": "^3.1.3",
+    "cypress-cucumber-preprocessor": "^1.9.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "rimraf": "^2.6.2"
+  },
+  "author": "Lucas Fraga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uLucasFraga/cy-cucumber-for-beginners/issues"
+  }
+}
