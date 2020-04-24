@@ -43,16 +43,16 @@ $ npm run cypress:tags
 #language: en
 
 @e2e
-Feature: access concrete website
+Feature: access google website
 
-Scenario: Opening concrete page
+Scenario: Opening google page
     Given I open page
-    Then I see "Concrete" in the title
+    Then I see "Google" in the title
 
-Scenario: Search in concrete page
+Scenario: Search in google page
     Given I open page
-    When I search for "Lucas Fraga"
-    Then I see the survey completed "Como anexar ao report o screenshot com o Protractor"
+    When I search for "github lucas fraga"
+    Then I see the survey completed "uLucasFraga (Lucas Fraga) · GitHub"
 ```
 
 ## Report
