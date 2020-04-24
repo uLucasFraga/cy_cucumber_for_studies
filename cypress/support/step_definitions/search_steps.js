@@ -10,12 +10,12 @@ Then(`I see {string} in the title`, title => {
 })
 
 When(`I search for {string}`, text => {
-  cy.get('input[placeholder*="faça sua"]')
+  cy.get('input[name="q"]')
     .type(text+'{enter}')
 })
 
 Then(`I see the survey completed {string}`, text => {
-  cy.get('a[title*="Como anexar ao report"] h3 div').then(el => {
-    expect(el.text()).to.eq(text)
+  cy.get('h3[class="LC20lb DKV0Md"]').then(el => {
+    expect(el.text()).to.contains(text)
   })
 })
