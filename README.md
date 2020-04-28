@@ -1,4 +1,4 @@
-# CYPRESS-CUCUMBER-DOJO
+# CYPRESS-CUCUMBER
 
 > Repository with examples of automation using cypress + cucumber
 
