@@ -1,41 +1,40 @@
 {
-  "name": "cypress-cucumber-for-beginners",
+  "name": "cy-cucumber-for-beginners",
   "version": "1.0.0",
-  "description": "Example of cypress with cucumber for beginners",
+  "description": "Example of cypress with cucumber",
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --spec cypress/integration/*.feature",
+    "cypress:simple_build_run": "npm run simple_build && cypress run --spec cypress/integration/*.feature",
     "cypress:tags": "cypress run -e TAGS='@e2e'",
     "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html",
-    "simple_build": "cd ../cy-cucumber-for-beginners && npm install",
-    "static_fix": "standard --fix",
-    "clean:report": "rimraf mochawesome-report"
+    "clean": "rimraf node_modules && rimraf package-lock.json && rimraf cypress/screenshots && rimraf mochawesome-report",
+    "simple_build": "npm run clean && npm i"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uLucasFraga/cy-cucumber-for-beginners.git"
+    "url": "git+https://github.com/uLucasFraga/cy_cucumber_for_beginners.git"
   },
   "keywords": [
     "cypress",
     "cucumber",
     "testing"
   ],
-  "homepage": "https://github.com/uLucasFraga/cy-cucumber-for-beginners#readme",
-  "Dependencies": {
-    "cypress": "^4.4.1"
+  "homepage": "https://github.com/uLucasFraga/cy_cucumber_for_beginners#readme",
+  "dependencies": {
+    "cypress": "~4.5.0",
+    "cypress-cucumber-preprocessor": "~2.3.1",
+    "mochawesome": "~6.1.1",
+    "mocha": "~7.1.2"
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^1.19.2",
-    "eslint-plugin-cypress": "^2.10.3",
-    "mocha": "^5.2.0",
-    "mochawesome": "^3.1.1",
-    "rimraf": "^2.6.2",
-    "standard": "^12.0.1"
+    "eslint-plugin-cypress": "~2.10.3",
+    "rimraf": "~2.6.3"
   },
   "author": "Lucas Fraga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uLucasFraga/cy-cucumber-for-beginners/issues"
+    "url": "https://github.com/uLucasFraga/cy_cucumber_for_beginners/issues"
   }
 }
