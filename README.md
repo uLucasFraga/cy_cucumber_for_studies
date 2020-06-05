@@ -42,7 +42,9 @@ Repository with examples of automation using cypress and cucumber
 
 `cd /your_project`
 
-`npm run cypress:simple_build`
+`npm run simple_build`
+
+![example:](cypress_run.gif)
 
 > Tips
 
