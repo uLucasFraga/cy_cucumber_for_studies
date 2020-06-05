@@ -44,7 +44,7 @@ Repository with examples of automation using cypress and cucumber
 
 `npm run simple_build`
 
-![example:](cypress_run.gif)
+![](./doc/cypress_run.gif)
 
 > Tips
 
