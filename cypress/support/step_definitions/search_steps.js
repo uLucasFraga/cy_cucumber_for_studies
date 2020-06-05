@@ -1,9 +1,8 @@
-
 beforeEach(() => {
-Given(`I open page`, () => {
-    cy.visit('/')
-  })
-})
+  Given("that he opens page", () => {
+    cy.visit(Cypress.env("URL_GOOGLE"));
+  });
+});
 
 Then(`I see {string} in the title`, title => {
   cy.title().should('include', title)
