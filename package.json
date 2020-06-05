@@ -9,7 +9,7 @@
     "cypress:simple_build_run": "npm run simple_build && cypress run --spec cypress/integration/*.feature",
     "cypress:tags": "cypress run -e TAGS='@e2e'",
     "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html",
-    "clean": "rimraf node_modules && rimraf package-lock.json && rimraf cypress/screenshots && rimraf mochawesome-report",
+    "clean": "rm -rf ./node_modules && rimraf ./package-lock.json && rimraf ./cypress/screenshots && rimraf ./mochawesome-report",
     "simple_build": "npm run clean && npm i"
   },
   "repository": {
