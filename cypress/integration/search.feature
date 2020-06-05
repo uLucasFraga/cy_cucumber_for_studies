@@ -10,4 +10,4 @@ Scenario: Opening google page
 Scenario: Search in google page
     Given I open page
     When I search for "github lucas fraga"
-    Then I see the survey completed "uLucasFraga (Lucas Fraga) · GitHub"
+    Then I see the survey completed "uLucasFraga (lucas.fraga) · GitHub"
