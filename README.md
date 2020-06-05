@@ -1,42 +1,55 @@
-# CYPRESS-CUCUMBER
+# CY-CUCUMBER-FOR-BEGINNERS
 
-> Repository with examples of automation using cypress + cucumber
+Repository with examples of automation using cypress and cucumber
 
 > Cypress is the new standard in front-end testing that every developer and QA engineer needs.
 
 ---
 
-## Installation
+## Table of Contents
 
-> Clone
-- Clone this repo to your local machine using `https://github.com/uLucasFraga/cy-dojo.git`
+> Índice `README`.
 
-- Install all dependencies (package.json)
-`npm install`
-
-### Run tests
-
-> run test headless (electron)
-
-```shell
-$ npm run cypress:run
-```
-
-> run test interactive mode.
-
-```shell
-$ npm run cypress:open
-```
-
-> run test tags for cucumber.
-
-```shell
-$ npm run cypress:tags
-```
+  - [Prerequisites](#prerequisites)
+  - [Configuration](#configuration)
+  - [Installation](#installation)
+  - [Features](#features)
+  - [How to tests](#how-to-tests)
+  - [Report](#report)
+  - [Support](#support)
+  - [License](#license)
 
 ---
 
+## Prerequisites
+
+- [Install Node and NPM](https://nodejs.org/en/)
+- [Install Chrome](https://www.google.com/chrome/)
+- [Install Vscode or other IDE](https://code.visualstudio.com/download)
+- [Install Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress.html#Installing)
+
+## Configuration
+
+- Create or to use package.json and get Cypress dependencies
+
+## Installation
+
+> Clone repository
+
+- Clone this repo to your local machine using ssh or https, for example: `git clone hhttps://github.com/uLucasFraga/cy_cucumber_for_beginners.git`
+
+- Install all dependencies (package.json)
+
+`cd /your_project`
+
+`npm run cypress:simple_build`
+
+> Tips
+
+- Use package.json to install the project dependencies
+
 ## Features
+
 - file example `.feature`
 
 ```gherkin
@@ -55,24 +68,41 @@ Scenario: Search in google page
     Then I see the survey completed "uLucasFraga (Lucas Fraga) · GitHub"
 ```
 
+## How to tests
+
+> clean and run test headless (electron)
+
+`npm run cypress:simple_build_run`
+
+> run test headless (electron)
+
+`npm run cypress:run`
+
+> run test interactive mode.
+
+`npm run cypress:open`
+
+> run test tags for cucumber.
+
+`npm run cypress:tags`
+
 ## Report
 
 > run test report
 
-```shell
-$ npm run cypress:report
-```
-
----
+`npm run cypress:report`
 
 ## Support
 
-- Twitter at <a href="https://twitter.com/uLucasFraga" target="_blank">`@ulucasfraga`</a>
-- Facebook at <a href="https://www.facebook.com/lucass.fragaa" target="_blank">`Facebook: Lucas Fraga`</a>
-- Linkedin at <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">`Linkedin: Lucas Fraga`</a>
+  Twitter at: <a href="https://twitter.com/uLucasFraga" target="_blank">`@ulucasfraga`</a>
+  
+  Facebook at: <a href="https://www.facebook.com/lucass.fragaa" target="_blank">`ulucasfraga`</a>
+  
+  Linkedin at: <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">`ulucasfraga`</a>
 
-- E-mail: `lucass.fragaa@gmail.com`
-- Skype: `live:lucass.fragaa`
+E-mail: `lucass.fragaa@gmail.com`
+
+Skype: `live:lucass.fragaa`
 
 ---
 
@@ -81,4 +111,4 @@ $ npm run cypress:report
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2018 © <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">Lucas Fraga</a>.
+- Copyright 2020 © <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">Lucas Fraga</a>.
