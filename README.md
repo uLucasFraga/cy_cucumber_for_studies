@@ -1,4 +1,4 @@
-# CY-CUCUMBER-FOR-BEGINNERS
+# CY-CUCUMBER-FOR-STUDIES
 
 Repository with examples of automation using cypress and cucumber
 
@@ -36,7 +36,7 @@ Repository with examples of automation using cypress and cucumber
 
 > Clone repository
 
-- Clone this repo to your local machine using ssh or https, for example: `git clone hhttps://github.com/uLucasFraga/cy_cucumber_for_beginners.git`
+- Clone this repo to your local machine using ssh or https, for example: `git clone hhttps://github.com/uLucasFraga/cy_cucumber_for_studies.git`
 
 - Install all dependencies (package.json)
 
